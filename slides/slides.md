@@ -49,6 +49,10 @@ https://twitter.com/mareklinka
 * Source-gen
 * Other improvements
 
+---
+
+# C# 10
+
 --
 
 ## Boilerplate elimination
@@ -59,7 +63,7 @@ https://twitter.com/mareklinka
   * Simplification of auto-property syntax
   * Automatic null-checks
 
----
+--
 
 ## DEMO
 
@@ -71,7 +75,7 @@ https://twitter.com/mareklinka
 * `class` is the default, `struct` is new
 * `with` expression is now allowed for all value types
 
----
+--
 
 ## DEMO
 
@@ -90,7 +94,121 @@ https://twitter.com/mareklinka
 * New versions will release each year
 * This should increase the cadence of new features
 
+---
+
+# .NET 6
+
 --
+
+## Cross-platform
+
+* Portable thread-pool
+* Apple Silicon support
+* Crossgen2
+
+--
+
+## System.Text.Json
+
+* Writable DOM
+* Zero-reflection de/serialization
+* Support for `IAsyncEnumerable`
+* `ReferenceLoopHandling.Ignore` TBD
+
+--
+
+# DEMO
+
+--
+
+## LINQ
+
+* `DistinctBy`/`UnionBy`/`IntersectBy`/`ExceptBy`
+* `MaxBy`/`MinBy`
+* `Chunk`
+* `XOrDefault` now accepts a default value
+* Better support for ranges in `ElementAt`/`Take`
+
+--
+
+# DEMO
+
+--
+
+## Date/Time
+
+* Two new structs: `DateOnly`/`TimeOnly`
+* Improvements to time-zone support
+  * Full support for both IANA and Windows TZ
+  * Improvements to TZ name localization
+
+--
+
+# DEMO
+
+--
+
+## Logging source-gen
+
+* A source generator for logging messages
+* Increased performance
+* More linker-friendly
+
+--
+
+# DEMO
+
+--
+
+## Trimming improvements
+
+* Trim warnings enabled by default
+* Large portions of the BCL annotated
+  * NOT ASP.NET or WinForms
+* Default trim mode = linking
+
+--
+
+## Miscelaneous
+
+* Signifficantly improved `FileStream` perf on Windows
+* Support for async DI scopes
+* New collection - `PriorityQueue`
+
+---
+
+# Frameworks and libraries
+
+--
+
+## Entity Framework Core
+
+* Dapper-comparable performance
+* 70% faster
+* 43% less memory
+* 31% query performance
+
+--
+
+## ASP.NET Core
+
+* HTTP 3 support
+* HTTP logging middleware
+* OpenTelemetry support
+* Async streaming
+* CSS isolation
+* Performance improvements
+
+--
+
+## Other updates
+
+* Hot reload
+* .NET MAUI
+* Blazor for desktop (with MAUI)
+* Blazor AOT compilation, error boundaries, size decrease
+
+---
 
 # Q&A
 
