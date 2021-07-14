@@ -180,9 +180,13 @@ https://twitter.com/mareklinka
 
 ## Miscelaneous
 
-* Signifficantly improved `FileStream` perf on Windows
+* Signifficantly improved `FileStream` perf on Windows ([link](https://devblogs.microsoft.com/dotnet/announcing-net-6-preview-4/#significantly-improved-filestream-performance-on-windows))
 * Support for async DI scopes
 * New collection - `PriorityQueue`
+
+--
+
+# DEMO
 
 ---
 
@@ -216,6 +220,8 @@ https://twitter.com/mareklinka
 * .NET MAUI
 * Blazor for desktop (with MAUI)
 * Blazor AOT compilation, error boundaries, size decrease
+* SOCKS proxy support
+* Two metric tons of additional stuff
 
 ---
 

@@ -1,8 +1,4 @@
-﻿using System.Diagnostics;
-using System.Text.Json.Nodes;
-using System.Text.Json.Serialization;
-
-static async Task SerializeAsyncEnumerable()
+﻿static async Task SerializeAsyncEnumerable()
 {
     var options = new JsonSerializerOptions() { ReferenceHandler = ReferenceHandler.IgnoreCycles };
     using Stream stream = Console.OpenStandardOutput();
@@ -96,7 +92,5 @@ SourceGenSerializationMethod2();
 SourceGenSerializationMethod3();
 
 SourceGenDeserialization();
-
-
 
 Console.ReadLine();

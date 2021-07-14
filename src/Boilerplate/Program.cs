@@ -6,6 +6,6 @@
 
 var app = WebApplication.Create(args);
 
-app.MapGet("/", (Func<string>)(() => "Hello World!"));
+app.MapGet("/", () => "Hello World!");
 
 await app.RunAsync();
