@@ -13,6 +13,7 @@ progress: false
 ## What's new in C# 10 and .NET 6
 
 #### by Marek Linka
+###### https://github.com/mareklinka/dotnetba-csharp10net6
 
 ---
 
@@ -73,6 +74,7 @@ https://twitter.com/mareklinka
 
 * New record syntax: `record class` and `record struct`
 * `class` is the default, `struct` is new
+  * Caveat: `record struct` is NOT immutable by default
 * `with` expression is now allowed for all value types
 
 --
@@ -83,8 +85,15 @@ https://twitter.com/mareklinka
 
 ## Improvements to lambdas and properties
 
-* TBD
+* Lambdas will support:
+  * Attributes
+  * Explicit return types
+  * Natural types (no more delegate conversions)
 * Properties can be declared as `required`
+
+--
+
+# ["DEMO"](https://github.com/dotnet/csharplang/blob/main/proposals/lambda-improvements.md)
 
 --
 
@@ -113,7 +122,7 @@ https://twitter.com/mareklinka
 * Writable DOM
 * Zero-reflection de/serialization
 * Support for `IAsyncEnumerable`
-* `ReferenceLoopHandling.Ignore` TBD
+* `ReferenceHandler.IgnoreCycles`
 
 --
 
