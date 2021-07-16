@@ -1,5 +1,3 @@
-using System.Text.Json.Serialization;
-
 namespace Json
 {
     public class MessageObject
@@ -10,7 +8,6 @@ namespace Json
     [JsonSerializable(typeof(MessageObject))]
     public partial class SerializationContext : JsonSerializerContext
     {
-
     }
 }
 

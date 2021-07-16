@@ -4,7 +4,8 @@ var provider = builder.Services.AddTransient<IMyService, MyService>().BuildServi
 
 var app = builder.Build();
 
-app.MapGet("/", (IMyService service) => {
+app.MapGet("/", (IMyService service) =>
+{
     service.DoTheThing();
     return "Hello, world!";
 });

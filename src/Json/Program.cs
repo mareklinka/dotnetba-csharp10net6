@@ -46,12 +46,6 @@ static void SourceGenSerializationMethod1()
     writer.Flush();
 
     Console.WriteLine(System.Text.Encoding.UTF8.GetString(ms.ToArray()));
-
-    // alternative
-    JsonSerializer.Serialize(message, SerializationContext.Default.MessageObject);
-
-    // alternative alternative
-    JsonSerializer.Serialize(message, typeof(MessageObject), SerializationContext.Default);
 }
 
 static void SourceGenSerializationMethod2()
@@ -60,9 +54,6 @@ static void SourceGenSerializationMethod2()
 
     // alternative
     JsonSerializer.Serialize(message, SerializationContext.Default.MessageObject);
-
-    // alternative alternative
-    JsonSerializer.Serialize(message, typeof(MessageObject), SerializationContext.Default);
 }
 
 static void SourceGenSerializationMethod3()

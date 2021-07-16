@@ -88,7 +88,7 @@ https://twitter.com/mareklinka
 * Lambdas will support:
   * Attributes
   * Explicit return types
-  * Natural types (no more delegate conversions)
+  * [Natural types](https://github.com/dotnet/csharplang/blob/main/proposals/lambda-improvements.md) (no more delegate conversions)
 * Properties can be declared as `required`
 
 --
@@ -114,6 +114,7 @@ https://twitter.com/mareklinka
 * Portable thread-pool
 * Apple Silicon support
 * Crossgen2
+* PGO
 
 --
 

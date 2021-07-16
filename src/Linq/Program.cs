@@ -27,7 +27,7 @@ PrintObject("MinBy", collection1.MinBy(x => x.Id));
 PrintObject("MaxBy", collection2.MaxBy(x => x.Id));
 
 var i = 1;
-foreach (var c in Enumerable.Range(1, 100).Chunk(10))
+foreach (var c in Enumerable.Range(1, 101).Chunk(10))
 {
     PrintCollection($"Chunk {i++}", c);
 }
